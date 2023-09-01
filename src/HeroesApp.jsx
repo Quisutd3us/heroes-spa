@@ -1,5 +1,4 @@
 import {AppRouter} from "./router/AppRouter.jsx";
-import {Navbar} from "./ui/components/NavBar.jsx";
 
 
 export const HeroesApp = () => {
