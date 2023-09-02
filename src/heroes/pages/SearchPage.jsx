@@ -8,7 +8,7 @@ import {getHeroByName} from "../helpers";
 export const SearchPageMessages = ({heroes, q}) => {
   if (Object.keys(heroes).length === 0) return (
       <div className="alert alert-danger" role="alert">
-        The Hero <b>{q}</b> dont exist..
+        <strong>{q} </strong>Hero, Dont exist...
       </div>
   )
   return (
