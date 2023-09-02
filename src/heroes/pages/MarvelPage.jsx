@@ -1,26 +1,18 @@
-import {getHeroesByPublisher} from "../helpers";
 import {HeroesList} from "../components";
 
 const MarvelPage=()=> {
-  const heroList = getHeroesByPublisher('Marvel Comics');
   return (
       <>
         <div className="container">
           <div className="row">
             <div className="col-xs-12">
-              <h1>Marvel Heroes</h1>
+              <h1 className={'display-4'}>Marvel Heroes List</h1>
             </div>
           </div>
           <div className="row">
-
-              {
-                heroList.map((hero)=>(
-                    <HeroesList
-                      key={hero.id}
-                      {...hero}
-                    />
-                ))
-              }
+            {
+              <HeroesList publisher={'Marvel Comics'}/>
+            }
           </div>
         </div>
       </>
