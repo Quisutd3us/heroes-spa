@@ -1,12 +1,19 @@
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
 
+export const CheckAlterEgoCharacter = ({alter_ego, characters}) => {
+  if (alter_ego === characters) return (<></>);
+  return <li className="list-group-item"><strong>Characters:</strong> {characters}</li>
+
+}
+
+
 export const HeroCard = (
     {
       id,
+      characters,
       superhero,
       alter_ego,
-      characters,
       first_appearance,
       publisher,
     }) => {
@@ -25,7 +32,10 @@ export const HeroCard = (
           <ul className="list-group list-group-flush">
             <li className="list-group-item"><strong>Publisher:</strong> {publisher}</li>
             <li className="list-group-item"><strong>Alter Ego:</strong> {alter_ego}</li>
-            <li className="list-group-item"><strong>Characters:</strong> {characters}</li>
+            <CheckAlterEgoCharacter
+                alter_ego={alter_ego}
+                characters={characters}
+            />
             <li className="list-group-item"><strong>First Appearance: </strong> {first_appearance}</li>
           </ul>
           <div className="card-body d-flex flex-column justify-content-center ">
@@ -41,10 +51,15 @@ export const HeroCard = (
 };
 
 HeroCard.propTypes = {
-  id:PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
   superhero: PropTypes.string.isRequired,
   alter_ego: PropTypes.string.isRequired,
   characters: PropTypes.string.isRequired,
   first_appearance: PropTypes.string.isRequired,
   publisher: PropTypes.string.isRequired
+}
+
+CheckAlterEgoCharacter.propTypes = {
+  alter_ego: PropTypes.string.isRequired,
+  characters: PropTypes.string.isRequired
 }
