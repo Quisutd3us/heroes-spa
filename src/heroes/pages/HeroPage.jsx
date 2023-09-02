@@ -1,10 +1,11 @@
 import {Navigate, useNavigate, useParams} from "react-router-dom";
 import {getHeroById} from "../helpers/index.js";
+import {useMemo} from "react";
 
 export const HeroPage = () => {
   const navigate = useNavigate();
   const {id} = useParams();
-  const hero = getHeroById(id);
+  const hero = useMemo(() => getHeroById(id), [id]);
   const onNavigateBack = () => {
     hero.publisher === 'DC Comics' ? navigate('/dc') : navigate('/marvel');
   }
@@ -20,7 +21,7 @@ export const HeroPage = () => {
         </div>
 
         <div className="col-4">
-          <div className="card">
+          <div className="card animate__animated animate__bounceInLeft">
             <img className="card-img-top" src={srcImage} alt={hero.superhero}/>
           </div>
         </div>

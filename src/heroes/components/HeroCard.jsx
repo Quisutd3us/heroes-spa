@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
+import 'animate.css';
 
 export const CheckAlterEgoCharacter = ({alter_ego, characters}) => {
   if (alter_ego === characters) return (<></>);
@@ -21,7 +22,7 @@ export const HeroCard = (
   return (
       <div
           className={'col-xs-6 col-md-4 col-lg-3 my-4'}>
-        <div className="card">
+        <div className="card animate__animated animate__backInDown">
           <img className="card-img-top" src={srcImage} alt="Card image cap"/>
           <div className="card-body">
             <h5 className="card-title text-primary display-6">{superhero}</h5>
