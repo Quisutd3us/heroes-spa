@@ -22,7 +22,7 @@ export const HeroPage = () => {
 
         <div className="col-4">
           <div className="card animate__animated animate__bounceInLeft">
-            <img className="card-img-top" src={srcImage} alt={hero.superhero}/>
+            <img className="card-img-top img-fluid" src={srcImage} alt={hero.superhero}/>
           </div>
         </div>
         <div className="col-8">

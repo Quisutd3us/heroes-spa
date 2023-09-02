@@ -21,9 +21,9 @@ export const HeroCard = (
   const srcImage = `/assets/heroes/${id}.jpg`
   return (
       <div
-          className={'col-xs-6 col-md-4 col-lg-3 my-4'}>
+          className={'col my-4'}>
         <div className="card animate__animated animate__backInDown">
-          <img className="card-img-top" src={srcImage} alt="Card image cap"/>
+          <img className="card-img-top img-fluid" src={srcImage} alt="Card image cap"/>
           <div className="card-body">
             <h5 className="card-title text-primary display-6">{superhero}</h5>
             <p className="card-text">Some quick example text to build on the card title and make up the bulk of

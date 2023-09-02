@@ -6,7 +6,7 @@ export const HeroesApp = () => {
       <>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-xs-12">
+            <div className="col">
               <div className={'d-flex flex-row-reverse'}>
                 <h1
                     className={'display-3'}
@@ -18,7 +18,7 @@ export const HeroesApp = () => {
 
         <div className="container-fluid">
           <div className="row">
-            <div className="col-xs-12 my-5">
+            <div className="col">
               <AppRouter/>
             </div>
           </div>
