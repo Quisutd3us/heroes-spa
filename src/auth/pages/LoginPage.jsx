@@ -13,6 +13,17 @@ const LoginPage = () => {
   }
   return (
       <>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col">
+              <div className={'d-flex flex-row-reverse'}>
+                <h1
+                    className={'display-3'}
+                >HeroesApp</h1>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="container">
           <div className="row">
             <div className="col-xs-12">
