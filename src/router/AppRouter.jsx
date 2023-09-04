@@ -1,5 +1,5 @@
 import {Routes, Route} from "react-router-dom";
-import LoginPage from "../heroes/pages/LoginPage.jsx";
+import LoginPage from "../auth/pages/LoginPage.jsx";
 import {HeroesRoutes} from "../heroes/index.js";
 
 export const AppRouter =() => {

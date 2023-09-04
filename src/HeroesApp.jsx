@@ -1,9 +1,10 @@
 import {AppRouter} from "./router/AppRouter.jsx";
+import {AuthProvider} from "./auth/index.js";
 
 
 export const HeroesApp = () => {
   return (
-      <>
+      <AuthProvider>
         <div className="container-fluid">
           <div className="row">
             <div className="col">
@@ -23,7 +24,7 @@ export const HeroesApp = () => {
             </div>
           </div>
         </div>
-      </>
+      </AuthProvider>
   );
 };
 
