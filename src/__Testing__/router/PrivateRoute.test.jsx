@@ -1,4 +1,4 @@
-import {describe, expect, jest, test} from "@jest/globals";
+import {describe, expect, test} from "@jest/globals";
 import {render, screen} from "@testing-library/react";
 import {AuthContext} from "../../auth/index.js";
 import {PrivateRoute} from "../../router/PrivateRoute.jsx";
