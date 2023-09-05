@@ -1,14 +1,11 @@
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
-import 'animate.css';
 
 export const CheckAlterEgoCharacter = ({alter_ego, characters}) => {
   if (alter_ego === characters) return (<></>);
   return <li className="list-group-item"><strong>Characters:</strong> {characters}</li>
 
 }
-
-
 export const HeroCard = (
     {
       id,
